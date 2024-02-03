@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praject</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Celcius to Fahrenheit Converter</h1>
+
+        <input type="text" id="input" placeholder="Type celcius number">
+        <br>
+        <button onclick="update()">Convert To Fahrenheit</button>
+        <p id="result">result</p>
+    </div>
+</body>
+
+<script>
+    function update() {
+        var celcius = document.getElementById("input").value
+        var fahrenheit = celcius * 9 / 5 + 32;
+        var totalresult = document.getElementById("result")
+        totalresult.innerHTML = fahrenheit+" Fahrenheit"
+
+
+    }
+
+
+
+</script>
+
+</html>
